@@ -9,7 +9,7 @@ const INMUTABLE_CACHE = 'immutable-v1';
 
 // Definimos los recursos que queremos almacenar en caché
 const APP_SHELL = [
-    '/',
+    // '/',
     'index.html',
     'css/style.css',
     'img/favicon.ico',

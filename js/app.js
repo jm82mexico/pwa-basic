@@ -1,7 +1,12 @@
+var url = window.location.href;
+var swLocation = '/pwa-basic/sw.js';
+
 if(navigator.serviceWorker){
+    if ( url.includes('localhost') ) {
+        swLocation = '/sw.js';
+    }
 
-
-    navigator.serviceWorker.register('/sw.js')
+    navigator.serviceWorker.register(swLocation)
         .then(function(registro) {
             // Registro exitoso
             console.log('Service Worker registrado:', registro);
