@@ -7,13 +7,13 @@ if(navigator.serviceWorker){
     }
 
     navigator.serviceWorker.register(swLocation)
-        .then(function(registro) {
+        .then(function() {
             // Registro exitoso
-            console.log('Service Worker registrado:', registro);
+            console.log('Service Worker registrado:');
         })
-        .catch(function(error) {
+        .catch(function() {
             // Error en el registro
-            console.error('Error al registrar el Service Worker:', error);
+            console.error('Error al registrar el Service Worker:');
         });
 }
 // Referencias de jQuery
