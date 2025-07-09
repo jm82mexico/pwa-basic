@@ -1,4 +1,16 @@
+if(navigator.serviceWorker){
 
+
+    navigator.serviceWorker.register('/sw.js')
+        .then(function(registro) {
+            // Registro exitoso
+            console.log('Service Worker registrado:', registro);
+        })
+        .catch(function(error) {
+            // Error en el registro
+            console.error('Error al registrar el Service Worker:', error);
+        });
+}
 // Referencias de jQuery
 
 var titulo      = $('#titulo');
